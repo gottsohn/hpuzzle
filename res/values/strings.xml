@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">hpuzzle</string>
+    <string name="menu_rate">Rate</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Huzzle Puzzle</string>
+    <string name="TITLE">Huzzle Puzzle</string>
+    <string name="updscore">Update Score</string>
+    <string name="scorebd">Online Scoreboard</string>
+    <string name="pickp">Pick picture</string>
+    <string name="ad_unit_id">ca-app-pub-4462163289001510/5776026405</string>
+
+</resources>

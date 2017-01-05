@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta content='width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' name='viewport' />
+
+    	<link rel="stylesheet" type="text/css" href="scripts/style.css"/>
+		<title>Huzzle Puzzle</title>
+		<script type="text/javascript" src="scripts/jquery.js"></script>
+		<script type="text/javascript" src="scripts/code.js"></script>
+		<script type="text/javascript" src="scripts/sc.js"></script>		
+		<script type="text/javascript" src="scripts/jquery.jqpuzzle.min.js"></script> 
+		<script type="text/javascript" src="scripts/json2.js"></script>
+		<link rel="stylesheet" type="text/css" href="./scripts/jquery.jqpuzzle.css">
+
+</head>
+<body>
+<div id="content">
+    <div class="mdiv">
+    	<div id="home">
+        	<div align="center"><img id="img" src="img/home.png" style='max-width:100%;max-height:50%;'/></div>
+            <div align="center">
+            <ul>
+            	<a  href="#" onclick="return newg();"><li class="item">Play now</li></a>
+                <a href="#" onclick='onlscore();'><li class="item">Online Scoreboard</li></a>
+                               
+                <a href="#" onclick="viewSettings();"><li class="item">Settings</li></a>
+                <a href="#" onclick="about();"><li class="item">About</li></a>
+                <!--a href="#" onclick='droid.closeprog();'><li class="item">Exit</li></a--> 
+
+            </ul>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div id="boxes">
+	        <div id="msg" class="window" align="center">
+	            <div id='msgtxt'>
+	            </div>
+	            <div id="msgfoot">
+	            </div>
+	        </div>    
+       
+</div>
+        <div id="func">
+        <div id="q">
+	   			<div>
+	   				<p class='phd' >
+	   				<i class='icon icon-info-sign'></i>	<span id='fn'></span>
+	   				</p>
+                    <div id="ttx"></div>
+	   				<table><tr><td><div  id="positive" class='btn btn-info'><i class='icon-ok icon'></i> Yes</div></td><td><div class='btn btn-danger'  onclick='_hide__pwin__()' id="negative"><i class='icon-remove icon'></i> No</div></td><td><div class='btn'  onclick='_hide__pwin__()' id="neutral">Cancel</div></td></tr></table>
+	   			</div>
+	   		</div>
+             <div id="sinfo">
+                <div>
+                    <p class='phd' id='fn'>
+                    <i class='icon icon-info-sign'></i>	Message
+                    </p>
+                    <p id='infomsg'>
+                    </p>
+                </div>
+             </div>
+			<div id="newg">
+           		<div style="padding:2px;">
+             	   <div class='phd' style="font-size:xx-small;">
+              <table align="center"><tr><td><i class='icon icon-info-sign'></i></td><td>Select a photo to begin, or pick from your phone menu <span id="fn"></span></td></tr></table>
+                </div>
+             
+                <div id="cont">
+                
+                </div>
+           		 </div>
+            </div>
+            <div id="settings">
+            	<div style="padding:5px">
+                	<div>
+                    	<h2><table><tr><td><i class="icon icon-cog"></i></td><Td>Settings</Td></tr></table></h2>
+						<div class="phd"><table><tr><td><i class="icon icon-adjust"></i></td><Td>Puzzle Size</Td></tr></table></div>
+                        <div><table><tr><td>Rows</td><td><select class="rows"></select></td><td>Columns</td><td><select class="cols"></select></td></tr></table></div>
+                        <div class="phd"><label><table><tr><td><i class="icon icon-flag"></i></td><Td>Show Numbers</Td><Td><input type="checkbox" class="num" /></Td></tr></table></label></div>
+                        <div class="phd"><label><table><tr><td><i class="icon icon-list-alt"></i></td><Td>Shuffle Rounds</Td><Td><select class="shuffle"></select></Td></tr></table></label></div>
+                         <div class="phd"><label><table><tr><td><i class="icon icon-music"></i></td><Td>Background music</Td><Td><input type="checkbox" class="music" /></Td></tr></table></label></div>
+                        <div><input type="button" onclick="saveSettings()" value="Save Settings" class="btn btn-info" /><br/><a style="float:right;" href="#" onclick="__resetDB__();">Reset Settings</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="score">
+            		<div style="padding:10px;">
+                    	<p class="phd">Submit your score</p>
+                        <p id="infomsg"></p>
+                        <div>
+                        <p>
+	                     <p>SCORE: <B class="score"></B></p>
+                         <p>TOTAL SCORE: <b class="tscore"></b>
+                        </p>
+                         <B>Enter your name below</B></p>
+                         <p><input type="text" class="txt" id="user" /> <input type="button" value="Submit" class="btn btn-inverse" onclick='submscore()' /><br/><br/><a style="float:right;" href="#" onclick="return resetscore();">Reset Score</a></p>
+                        </div>
+                    </div>
+            </div>
+            <div id="ld">
+            	<div style="padding:10px">
+                <p class="phd" style="font-size:large;">Loading...</p>
+                	<img src="img/load.gif"/>
+                </div>
+            </div>
+            </div>
+<!--img src='img/street.jpg' id="img" alt="" class="jqPuzzle"/-->
+<div id="ctrl">
+<input type="text" class="jq-time" />
+<input type="text" class="jq-moves" />
+<a class="jq-org">org</a>
+<a class="jq-mix">mix</a>
+</div>
+</body>
+	<script>
+	</script>
+
+</body></html>

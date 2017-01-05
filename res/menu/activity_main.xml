@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/menu_pickpic"
+        android:title="@string/pickp"
+        android:icon="@drawable/imagepicker"
+        android:showAsAction="ifRoom"
+        android:orderInCategory="90" />
+    
+     <item android:id="@+id/menu_score"
+        android:title="@string/scorebd"
+        android:icon="@drawable/lb"
+        android:showAsAction="ifRoom"
+        android:orderInCategory="100" />
+    <item android:id="@+id/menu_rate"
+        android:title="@string/menu_rate"
+        
+        android:orderInCategory="101" />   
+        
+     <item android:id="@+id/menu_updscore"
+        android:title="@string/updscore"
+        
+        android:orderInCategory="101" />   
+        
+       <item android:id="@+id/menu_about"
+        android:title="About"
+        android:orderInCategory="102" />
+       
+    <item android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/setting"
+        android:orderInCategory="103" />
+    
+    <item android:id="@+id/menu_exit"
+        android:title="Exit"
+        android:orderInCategory="104" />
+  
+</menu>

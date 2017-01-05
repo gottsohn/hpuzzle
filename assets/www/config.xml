@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="0.8.6.480" id="hpuzzle480" xml:lang="en">  
+    <name>Huzzle Puzzle - Full</name>
+    <author href='http://godson.com.ng'>Godson Ukpere</author>
+    <description>Complete the puzzles, select custom puzzles from your phone's gallery, submit your scores to the online scoreboard.</description>
+    <content src="index.html"/>
+	 
+  <feature id="blackberry.app" required="true" version="1.0.0.0" />
+  <feature id="blackberry.app.event" required="true" version="1.0.0.0" />
+    <feature id="blackberry.system" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.system.event" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.invoke" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.invoke.BrowserArguments" required="true" version="1.0.0.0"/>
+ <feature id="blackberry.bbm.platform" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.ui.menu" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.audio" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.audio.Player" required="true" version="1.0.0.0"/>
+
+  <feature id="blackberry.identity" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.io.file" required="true" version="1.0.0.0"/>
+  <feature id="webworks.ui.filePicker" />
+
+  <access subdomains="true" uri="*" />
+  <icon src="img/icon.png" />
+  <rim:orientation mode="landscape" />
+  <rim:loadingScreen
+				  backgroundColor="#2a2a2a"
+				   backgroundImage="img/bg.jpg"
+              foregroundImage="img/home.png"
+		     onFirstLaunch="true">
+    <rim:transitionEffect type="fadeOut"/>
+  </rim:loadingScreen>
+
+ <!--rim:navigation mode="focus"/-->
+  <rim:permissions>
+    <rim:permit>read_device_identifying_information</rim:permit>
+    <rim:permit>access_shared</rim:permit>
+    <rim:permit>record_audio</rim:permit> 
+  </rim:permissions>
+</widget>
